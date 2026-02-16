@@ -1,0 +1,160 @@
+:root {
+  --bg: #0b0b0d;
+  --card: #121217;
+  --text: #f4f4f6;
+  --muted: #b3b3bf;
+  --gold: #d8b36a;
+  --line: #23232c;
+  --max: 1080px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(1200px 600px at 80% -10%, #1a1a24 0%, var(--bg) 45%);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.container {
+  width: min(100% - 2rem, var(--max));
+  margin: 0 auto;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(8px);
+  background: rgba(11, 11, 13, 0.75);
+  border-bottom: 1px solid var(--line);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 0;
+}
+
+.brand {
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.brand span {
+  color: var(--gold);
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.95rem;
+}
+
+.links a {
+  color: var(--muted);
+}
+
+.links a:hover {
+  color: var(--text);
+}
+
+.hero {
+  padding: 5.5rem 0 3rem;
+}
+
+.eyebrow {
+  color: var(--gold);
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0.6rem 0 1rem;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.1;
+}
+
+.lead {
+  max-width: 680px;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.cta-row {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  border: 1px solid var(--line);
+  background: #191920;
+  color: var(--text);
+  padding: 0.72rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.btn.primary {
+  border-color: #9a7a3f;
+  background: linear-gradient(180deg, #d8b36a 0%, #b48a42 100%);
+  color: #1a1307;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 2.2rem 0 3.5rem;
+}
+
+.card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0));
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+.card h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.02rem;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.section {
+  padding: 2rem 0 2.6rem;
+  border-top: 1px solid var(--line);
+}
+
+.section h2 {
+  margin: 0 0 0.8rem;
+  font-size: 1.5rem;
+}
+
+.legal p, .legal li {
+  color: var(--muted);
+}
+
+footer {
+  border-top: 1px solid var(--line);
+  padding: 1.2rem 0 2rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
