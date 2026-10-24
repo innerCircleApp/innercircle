@@ -2,61 +2,366 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>InnerCircle+ | Quiet Luxury Dating Network</title>
-  <meta name="description" content="InnerCircle+ is a private, premium dating network for intentional relationships.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>InnerCircle+ | Love, curated</title>
+  <meta name="description" content="InnerCircle+ is a private dating network for verified members. A few thoughtful introductions each day, mutual matches only, and private conversations.">
+  <meta name="theme-color" content="#050505">
+  <meta property="og:title" content="InnerCircle+ | Love, curated">
+  <meta property="og:description" content="A private dating network for verified members.">
+  <meta property="og:image" content="assets/social.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
 </head>
 <body>
-  <nav class="nav">
-    <div class="container nav-inner">
-      <div class="brand">InnerCircle<span>+</span></div>
-      <div class="links">
-        <a href="index.html">Home</a>
-        <a href="support.html">Support</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-      </div>
-    </div>
-  </nav>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
 
-  <main class="container">
-    <section class="hero">
-      <div class="eyebrow">Private Dating Network</div>
-      <h1>Quiet Luxury Dating for People with Real Intentions.</h1>
-      <p class="lead">
-        InnerCircle+ is designed for people who value quality over noise. Meet verified members,
-        discover curated matches, and build meaningful conversations in a calm, premium environment.
-      </p>
-      <div class="cta-row">
-        <a class="btn primary" href="https://apple.co/4azGvZP" rel="noopener">Download on the App Store</a>
-        <a class="btn" href="support.html">Contact Support</a>
+  <header class="site-nav" data-nav>
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="InnerCircle+ home">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <defs>
+            <linearGradient id="brandGold" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#F3E3B6"/><stop offset="0.55" stop-color="#C9A460"/><stop offset="1" stop-color="#8A6A35"/>
+            </linearGradient>
+          </defs>
+          <g fill="none" stroke="url(#brandGold)" stroke-width="2">
+            <circle cx="32" cy="32" r="22"/>
+            <g class="ring-a"><ellipse cx="32" cy="32" rx="23" ry="17" transform="rotate(28 32 32)"/></g>
+            <g class="ring-b"><ellipse cx="32" cy="32" rx="23" ry="17" transform="rotate(-28 32 32)"/></g>
+          </g>
+        </svg>
+        <span>InnerCircle<em>+</em></span>
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="Main">
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#safety">Safety</a>
+        <a href="#faq">FAQ</a>
+        <a href="support.html">Support</a>
+        <a class="btn btn-gold btn-sm" href="https://apps.apple.com" target="_blank" rel="noopener">Get the app</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <svg class="orbits" viewBox="0 0 1200 1200" aria-hidden="true">
+        <defs>
+          <linearGradient id="orbitStroke" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#E8D29E" stop-opacity="0.65"/>
+            <stop offset="0.5" stop-color="#C9A460" stop-opacity="0.18"/>
+            <stop offset="1" stop-color="#E8D29E" stop-opacity="0.5"/>
+          </linearGradient>
+        </defs>
+        <g class="o1">
+          <circle cx="600" cy="600" r="420"/>
+          <circle class="spark" cx="1020" cy="600" r="3"/>
+        </g>
+        <g class="o2">
+          <ellipse cx="600" cy="600" rx="540" ry="360" transform="rotate(28 600 600)"/>
+          <circle class="spark" cx="600" cy="240" r="2.5" transform="rotate(28 600 600)"/>
+        </g>
+        <g class="o3">
+          <ellipse cx="600" cy="600" rx="540" ry="360" transform="rotate(-28 600 600)"/>
+        </g>
+      </svg>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-reveal>Private dating network</p>
+          <h1 class="display" id="hero-title">
+            <span class="line"><span>Love,</span></span>
+            <span class="line"><em class="shimmer">curated.</em></span>
+          </h1>
+          <p class="lead" data-reveal style="--i: 3">
+            A members-only network for people who are done with endless swiping.
+            Verified members, a few thoughtful introductions each day, and private
+            conversations that only begin when you both say yes.
+          </p>
+          <div class="cta-row" data-reveal style="--i: 4">
+            <a class="btn btn-gold" href="https://apps.apple.com" target="_blank" rel="noopener">
+              <svg class="apple-glyph" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.02-1.5-2.62-1.7-3.19-1.72-1.36-.14-2.65.8-3.34.8-.69 0-1.75-.78-2.88-.76-1.48.02-2.85.86-3.61 2.19-1.54 2.67-.39 6.62 1.11 8.79.73 1.06 1.6 2.25 2.75 2.2 1.1-.04 1.52-.71 2.85-.71 1.33 0 1.71.71 2.88.69 1.19-.02 1.94-1.08 2.66-2.15.84-1.23 1.19-2.42 1.21-2.48-.03-.01-2.31-.89-2.32-3.54zM14.2 6.14c.61-.74 1.02-1.77.91-2.79-.88.04-1.94.59-2.57 1.33-.56.65-1.06 1.7-.93 2.7.98.08 1.98-.5 2.59-1.24z"/></svg>
+              Download on the App Store
+            </a>
+            <a class="btn" href="#how">See how it works</a>
+          </div>
+          <ul class="hero-points" data-reveal style="--i: 5">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Verified members</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>No ads</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>No subscriptions</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" data-parallax aria-hidden="true">
+          <div class="halo"></div>
+          <div class="phone">
+            <div class="island"></div>
+            <div class="phone-screen">
+              <img class="is-active" src="assets/screen-1.jpg" alt="" fetchpriority="high">
+              <img src="assets/screen-2.jpg" alt="" loading="lazy">
+              <img src="assets/screen-3.jpg" alt="" loading="lazy">
+            </div>
+          </div>
+          <div class="chip chip-a">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2.8 4.5 6v5.6c0 4.6 3.2 8.4 7.5 9.6 4.3-1.2 7.5-5 7.5-9.6V6L12 2.8z"/><path d="m8.8 12 2.2 2.2 4.4-4.4"/></svg>
+            Verified members only
+          </div>
+          <div class="chip chip-b">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>
+            Selected for you today
+          </div>
+          <div class="chip chip-c">
+            <span class="heart"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.8 4.5c2.2 0 3.6 1.2 5.2 3 1.6-1.8 3-3 5.2-3 3.8 0 5.9 3.9 4.4 7.3C19.5 16.4 12 21 12 21z"/></svg></span>
+            It’s a match
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#statement">Scroll</a>
+    </section>
+
+    <section class="statement" id="statement" aria-label="Our philosophy">
+      <div class="container">
+        <p class="statement-text" data-words data-gold="fewer,better,real,intentional">
+          Most dating apps are built to keep you swiping. InnerCircle+ is built for the opposite: fewer, better introductions, real verified people, and the time to get to know someone with intentional care.
+        </p>
       </div>
     </section>
 
-    <section class="grid">
-      <article class="card">
-        <h3>Verified Members</h3>
-        <p class="muted">Profiles are built for trust with identity-aware onboarding and transparent details.</p>
-      </article>
-      <article class="card">
-        <h3>Curated Matching</h3>
-        <p class="muted">See profiles with complete context: lifestyle, intent, values, and location fit.</p>
-      </article>
-      <article class="card">
-        <h3>Private Messaging</h3>
-        <p class="muted">Mutual matching unlocks conversation, with delivery states and read receipts supported.</p>
-      </article>
-      <article class="card">
-        <h3>Built for Safety</h3>
-        <p class="muted">In-app reporting, blocking, moderation workflows, and privacy controls are built in.</p>
-      </article>
+    <section class="showcase" aria-label="Inside the app">
+      <div class="marquee">
+        <div class="marquee-track">
+          <figure><img src="assets/shot-01-hero.jpg" alt="Today’s Introductions with curated member profiles" loading="lazy"></figure>
+          <figure><img src="assets/shot-02-daily.jpg" alt="A small set of introductions selected each day" loading="lazy"></figure>
+          <figure><img src="assets/shot-03-depth.jpg" alt="Profiles with depth beyond photos" loading="lazy"></figure>
+          <figure><img src="assets/shot-04-verified.jpg" alt="Verified badge after a live identity check" loading="lazy"></figure>
+          <figure><img src="assets/shot-05-interest.jpg" alt="See who is interested in you" loading="lazy"></figure>
+          <figure><img src="assets/shot-06-chats.jpg" alt="Private chats with messages, voice notes and photos" loading="lazy"></figure>
+          <figure><img src="assets/shot-07-profile.jpg" alt="Your profile with photos and details" loading="lazy"></figure>
+          <figure><img src="assets/shot-08-join.jpg" alt="Join InnerCircle+" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-reveal>How it works</p>
+          <h2 class="section-title" id="how-title" data-reveal style="--i: 1">Four quiet steps to <em>someone real.</em></h2>
+        </div>
+        <ol class="steps" data-progress>
+          <li class="step" data-reveal style="--i: 0">
+            <div class="step-num">1</div>
+            <h3>Verify with a live selfie</h3>
+            <p>A quick on-device check confirms your photos are really you. Your selfie is never stored.</p>
+          </li>
+          <li class="step" data-reveal style="--i: 1">
+            <div class="step-num">2</div>
+            <h3>Meet today’s introductions</h3>
+            <p>A small set of compatible, verified members, chosen for you each day. No endless feed.</p>
+          </li>
+          <li class="step" data-reveal style="--i: 2">
+            <div class="step-num">3</div>
+            <h3>Send a love</h3>
+            <p>Tap the heart for someone who stands out. They’re notified, and can love you back.</p>
+          </li>
+          <li class="step" data-reveal style="--i: 3">
+            <div class="step-num">4</div>
+            <h3>Match and talk privately</h3>
+            <p>When it’s mutual, a private chat opens for just the two of you, with voice notes, photos, and videos.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow" data-reveal>Designed with intention</p>
+          <h2 class="section-title" id="features-title" data-reveal style="--i: 1">Everything you need. <em>Nothing you don’t.</em></h2>
+        </div>
+        <div class="cards">
+          <article class="card" data-tilt data-reveal style="--i: 0">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2.8 4.5 6v5.6c0 4.6 3.2 8.4 7.5 9.6 4.3-1.2 7.5-5 7.5-9.6V6L12 2.8z"/><path d="m8.8 12 2.2 2.2 4.4-4.4"/></svg></div>
+            <h3>Verified members</h3>
+            <p>Every real member passes a live selfie check before they appear in anyone’s introductions.</p>
+          </article>
+          <article class="card" data-tilt data-reveal style="--i: 1">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></div>
+            <h3>Curated daily</h3>
+            <p>Introductions are chosen around your preferences, distance, and the lifestyle you share.</p>
+          </article>
+          <article class="card" data-tilt data-reveal style="--i: 2">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.3-9-8.6C1.6 8.2 3.6 4.6 7.1 4.6c2 0 3.4 1.1 4.9 2.8 1.5-1.7 2.9-2.8 4.9-2.8 3.5 0 5.5 3.6 4.1 6.8C19 15.7 12 20 12 20z"/></svg></div>
+            <h3>Mutual matches only</h3>
+            <p>Conversations only open when both of you say yes. No unsolicited messages, ever.</p>
+          </article>
+          <article class="card" data-tilt data-reveal style="--i: 0">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 15a3 3 0 0 1-3 3H8l-4 3V7a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3z"/><path d="M8 10h8M8 13.5h5"/></svg></div>
+            <h3>Private conversations</h3>
+            <p>Messages, voice notes, photos, and short videos, visible only to the two people in the match.</p>
+          </article>
+          <article class="card" data-tilt data-reveal style="--i: 1">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2.5 12s3.5-6.5 9.5-6.5S21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="2.8"/><path d="M4 20 20 4"/></svg></div>
+            <h3>Media blurred by default</h3>
+            <p>Shared photos and videos stay blurred until you choose to view them, so you are always in control.</p>
+          </article>
+          <article class="card" data-tilt data-reveal style="--i: 2">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3a6 6 0 0 1 6 6c0 4.5-6 11.5-6 11.5S6 13.5 6 9a6 6 0 0 1 6-6z"/><circle cx="12" cy="9" r="2.2"/></svg></div>
+            <h3>Discreet by design</h3>
+            <p>Your location is rounded to about a kilometer. Members see an approximate distance, never where you are.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="principles" aria-label="Our principles">
+      <div class="container">
+        <ul>
+          <li data-reveal style="--i: 0">No <em>ads.</em></li>
+          <li data-reveal style="--i: 1">No <em>subscriptions.</em></li>
+          <li data-reveal style="--i: 2">No endless <em>swiping.</em></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="safety" aria-labelledby="safety-title">
+      <div class="container split">
+        <div>
+          <p class="eyebrow" data-reveal>Privacy &amp; safety</p>
+          <h2 class="section-title" id="safety-title" data-reveal style="--i: 1">Your trust is <em>the product.</em></h2>
+          <p class="lead" data-reveal style="--i: 2">Safety isn’t a settings page at InnerCircle+. It is built into how members meet, talk, and leave.</p>
+          <ul class="ticks">
+            <li data-reveal style="--i: 3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Report any message.</strong> A long press reports a message, and blocking removes someone instantly.</span></li>
+            <li data-reveal style="--i: 4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Reviewed within 24 hours.</strong> Our safety process acts quickly on credible reports.</span></li>
+            <li data-reveal style="--i: 5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Leave completely.</strong> Deleting your account permanently removes your profile, photos, matches, and messages.</span></li>
+          </ul>
+        </div>
+
+        <div class="panel" data-reveal style="--i: 2">
+          <p class="panel-title">Privacy controls</p>
+          <div class="toggle-row">
+            <span>Hide my profile<small>Step out of new introductions</small></span>
+            <i class="toggle on" aria-hidden="true"></i>
+          </div>
+          <div class="toggle-row">
+            <span>Read receipts<small>Choose whether they see you read</small></span>
+            <i class="toggle" aria-hidden="true"></i>
+          </div>
+          <div class="toggle-row">
+            <span>Message previews<small>Hide message text on your lock screen</small></span>
+            <i class="toggle on" aria-hidden="true"></i>
+          </div>
+          <div class="face-note">
+            <div class="scan" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 8V6a2 2 0 0 1 2-2h2M16 4h2a2 2 0 0 1 2 2v2M20 16v2a2 2 0 0 1-2 2h-2M8 20H6a2 2 0 0 1-2-2v-2"/><circle cx="12" cy="10" r="2.6"/><path d="M8 16.5c.9-1.6 2.3-2.4 4-2.4s3.1.8 4 2.4"/></svg></div>
+            <div><strong>Face data is never stored.</strong>Your verification selfie is checked on your iPhone and discarded within seconds.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow" data-reveal>Questions</p>
+          <h2 class="section-title" id="faq-title" data-reveal style="--i: 1">Before you <em>join.</em></h2>
+        </div>
+        <div class="faq-list" data-reveal style="--i: 2">
+          <details>
+            <summary>Who can join InnerCircle+?<span class="plus" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Adults aged 20 and over who complete a live selfie verification. Sign in is with your Apple ID.</p></div>
+          </details>
+          <details>
+            <summary>How does matching work?<span class="plus" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Each day you receive a small set of introductions. Send a love to someone who stands out. If they love you back, it’s a match and a private chat opens for both of you.</p></div>
+          </details>
+          <details>
+            <summary>What happens to my verification selfie?<span class="plus" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>It is compared with your profile photos on your iPhone using Apple’s on-device technology, then discarded. We never store face data, only whether verification passed.</p></div>
+          </details>
+          <details>
+            <summary>Is there a subscription?<span class="plus" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>No. InnerCircle+ is a one-time purchase on the App Store, with no ads and no recurring fees.</p></div>
+          </details>
+          <details>
+            <summary>Can other members see where I am?<span class="plus" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>No. Your location is stored rounded to about a kilometer, and members only see an approximate distance. You can also hide your profile from new introductions at any time.</p></div>
+          </details>
+          <details>
+            <summary>How do I delete my account?<span class="plus" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Go to Profile, then Delete Account. Your profile, photos, likes, matches, messages, and shared media are permanently deleted.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final" aria-labelledby="final-title">
+      <svg class="final-rings" viewBox="0 0 400 400" aria-hidden="true">
+        <defs>
+          <linearGradient id="finalGold" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#F3E3B6" stop-opacity="0.55"/><stop offset="0.5" stop-color="#C9A460" stop-opacity="0.15"/><stop offset="1" stop-color="#E8D29E" stop-opacity="0.45"/>
+          </linearGradient>
+        </defs>
+        <g fill="none" stroke="url(#finalGold)" stroke-width="0.8">
+          <g class="ring-a"><circle cx="200" cy="200" r="150"/></g>
+          <g class="ring-b"><ellipse cx="200" cy="200" rx="165" ry="122" transform="rotate(28 200 200)"/></g>
+          <g class="ring-c"><ellipse cx="200" cy="200" rx="165" ry="122" transform="rotate(-28 200 200)"/></g>
+        </g>
+      </svg>
+      <div class="container">
+        <p class="eyebrow" data-reveal>Your next chapter</p>
+        <h2 class="display" id="final-title" data-reveal style="--i: 1">Join the <em class="shimmer still">inner circle.</em></h2>
+        <p class="lead" data-reveal style="--i: 2">A community that values intention, authenticity, and meaningful connection.</p>
+        <div class="cta-row" data-reveal style="--i: 3">
+          <a class="btn btn-orbit" href="https://apps.apple.com" target="_blank" rel="noopener">
+            <span>
+              <svg class="apple-glyph" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.02-1.5-2.62-1.7-3.19-1.72-1.36-.14-2.65.8-3.34.8-.69 0-1.75-.78-2.88-.76-1.48.02-2.85.86-3.61 2.19-1.54 2.67-.39 6.62 1.11 8.79.73 1.06 1.6 2.25 2.75 2.2 1.1-.04 1.52-.71 2.85-.71 1.33 0 1.71.71 2.88.69 1.19-.02 1.94-1.08 2.66-2.15.84-1.23 1.19-2.42 1.21-2.48-.03-.01-2.31-.89-2.32-3.54zM14.2 6.14c.61-.74 1.02-1.77.91-2.79-.88.04-1.94.59-2.57 1.33-.56.65-1.06 1.7-.93 2.7.98.08 1.98-.5 2.59-1.24z"/></svg>
+              Download on the App Store
+            </span>
+          </a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="container">
-      <div>InnerCircle+ &copy; 2026. All rights reserved.</div>
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">InnerCircle<em>+</em></a>
+          <p class="footer-tag">A private dating network for verified members who value quality over quantity.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#how">How it works</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#safety">Safety</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="mailto:innercirclesupport@hokfam.com">innercirclesupport@hokfam.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <span>&copy; <span data-year>2026</span> InnerCircle+. All rights reserved.</span>
+        <span>Made for people with real intentions.</span>
+      </div>
     </div>
   </footer>
 </body>

@@ -2,83 +2,231 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Terms of Use | InnerCircle+</title>
-  <meta name="description" content="Terms of Use for InnerCircle+.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Terms of Service | InnerCircle+</title>
+  <meta name="description" content="The terms that govern your use of InnerCircle+.">
+  <meta name="theme-color" content="#050505">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
 </head>
 <body>
-  <nav class="nav">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="read-progress" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-nav" data-nav>
     <div class="container nav-inner">
-      <div class="brand">InnerCircle<span>+</span></div>
-      <div class="links">
-        <a href="index.html">Home</a>
+      <a class="brand" href="index.html" aria-label="InnerCircle+ home">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <defs>
+            <linearGradient id="brandGold" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#F3E3B6"/><stop offset="0.55" stop-color="#C9A460"/><stop offset="1" stop-color="#8A6A35"/>
+            </linearGradient>
+          </defs>
+          <g fill="none" stroke="url(#brandGold)" stroke-width="2">
+            <circle cx="32" cy="32" r="22"/>
+            <g class="ring-a"><ellipse cx="32" cy="32" rx="23" ry="17" transform="rotate(28 32 32)"/></g>
+            <g class="ring-b"><ellipse cx="32" cy="32" rx="23" ry="17" transform="rotate(-28 32 32)"/></g>
+          </g>
+        </svg>
+        <span>InnerCircle<em>+</em></span>
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="Main">
+        <a href="index.html#how">How it works</a>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#safety">Safety</a>
         <a href="support.html">Support</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-      </div>
+        <a class="btn btn-gold btn-sm" href="https://apps.apple.com" target="_blank" rel="noopener">Get the app</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
     </div>
-  </nav>
+  </header>
 
-  <main class="container legal">
-    <section class="hero">
-      <div class="eyebrow">Legal</div>
-      <h1>Terms of Use</h1>
-      <p class="lead">Last updated: February 14, 2026</p>
+  <main id="main">
+    <section class="page-hero">
+      <svg class="orbits" viewBox="0 0 1200 1200" aria-hidden="true">
+        <defs>
+          <linearGradient id="orbitStroke" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#E8D29E" stop-opacity="0.65"/>
+            <stop offset="0.5" stop-color="#C9A460" stop-opacity="0.18"/>
+            <stop offset="1" stop-color="#E8D29E" stop-opacity="0.5"/>
+          </linearGradient>
+        </defs>
+        <g class="o1"><circle cx="600" cy="600" r="420"/></g>
+        <g class="o2"><ellipse cx="600" cy="600" rx="540" ry="360" transform="rotate(28 600 600)"/></g>
+        <g class="o3"><ellipse cx="600" cy="600" rx="540" ry="360" transform="rotate(-28 600 600)"/></g>
+      </svg>
+      <div class="container">
+        <p class="eyebrow" data-reveal>Legal</p>
+        <h1 class="display">
+          <span class="line"><span>Terms of</span></span>
+          <span class="line"><em class="shimmer">Service.</em></span>
+        </h1>
+        <p class="lead" data-reveal style="--i: 3">The agreement between you and InnerCircle+, including community standards and how we keep members safe.</p>
+        <span class="meta-pill" data-reveal style="--i: 4">Effective October 24, 2026</span>
+      </div>
     </section>
 
-    <section class="section">
-      <h2>1. Acceptance of Terms</h2>
-      <p>By downloading, accessing, or using InnerCircle+, you agree to these Terms of Use.</p>
-    </section>
-
-    <section class="section">
-      <h2>2. Eligibility</h2>
-      <p>You must be at least 18 years old and legally permitted to use dating services in your jurisdiction.</p>
-    </section>
-
-    <section class="section">
-      <h2>3. Account Responsibilities</h2>
-      <ul>
-        <li>You are responsible for accurate profile information.</li>
-        <li>You are responsible for activity under your account.</li>
-        <li>You must not impersonate others or provide deceptive content.</li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2>4. Community Conduct</h2>
-      <ul>
-        <li>No harassment, hate speech, threats, or exploitation.</li>
-        <li>No spam, scams, or solicitation of illegal services.</li>
-        <li>We may suspend or terminate accounts violating these rules.</li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2>5. Purchases</h2>
-      <p>InnerCircle+ is sold as a one-time purchase on the App Store. Taxes and storefront pricing may vary by region.</p>
-    </section>
-
-    <section class="section">
-      <h2>6. Termination</h2>
-      <p>You may stop using the service at any time. We may remove accounts that violate policy, legal requirements, or safety standards.</p>
-    </section>
-
-    <section class="section">
-      <h2>7. Disclaimer and Liability</h2>
-      <p>The service is provided "as is" and "as available." To the maximum extent allowed by law, liability is limited for indirect or consequential damages.</p>
-    </section>
-
-    <section class="section">
-      <h2>8. Contact</h2>
-      <p>For legal notices: <a href="mailto:innercircle@hokfam.com">innercircle@hokfam.com</a></p>
-    </section>
+    <div class="container legal-layout">
+      <aside class="toc" aria-label="On this page">
+        <p>On this page</p>
+        <ol>
+            <li><a href="#agreement-to-terms">Agreement to Terms</a></li>
+            <li><a href="#eligibility">Eligibility</a></li>
+            <li><a href="#premium-access">Premium Access</a></li>
+            <li><a href="#community-standards">Community Standards</a></li>
+            <li><a href="#user-content-and-license">User Content and License</a></li>
+            <li><a href="#safety-tools">Safety Tools</a></li>
+            <li><a href="#verification">Verification</a></li>
+            <li><a href="#messaging-voice-notes-photos-and-videos">Messaging, Voice Notes, Photos, and Videos</a></li>
+            <li><a href="#account-suspension-and-termination">Account Suspension and Termination</a></li>
+            <li><a href="#disclaimers">Disclaimers</a></li>
+            <li><a href="#limitation-of-liability">Limitation of Liability</a></li>
+            <li><a href="#dispute-resolution">Dispute Resolution</a></li>
+            <li><a href="#changes-to-terms">Changes to Terms</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ol>
+      </aside>
+      <article class="legal-body">
+          <section id="agreement-to-terms">
+            <h2><span>01</span>Agreement to Terms</h2>
+            <div>
+              <p>These Terms of Service (“Terms”) govern your access to and use of InnerCircle+ (the “Service”), operated by the InnerCircle+ team. By downloading, purchasing, registering for, or using the Service, you agree to be bound by these Terms and our Privacy Policy.</p>
+              <p>If you do not agree, do not use the Service.</p>
+            </div>
+          </section>
+          <section id="eligibility">
+            <h2><span>02</span>Eligibility</h2>
+            <div>
+              <p>You must be at least 20 years old and legally able to enter a binding agreement. You must provide accurate, current information and maintain only one account per person.</p>
+              <p>You may not use the Service if you have been previously removed for violating these Terms or if use is prohibited by applicable law.</p>
+            </div>
+          </section>
+          <section id="premium-access">
+            <h2><span>03</span>Premium Access</h2>
+            <div>
+              <p>InnerCircle+ is offered as a one-time premium purchase that grants access to the private network. Pricing is displayed in the App Store at the time of purchase. Except where required by law, purchases are final and non-refundable through us; refund requests must be directed to Apple according to App Store policies.</p>
+              <p>We may change pricing for new purchases in the future. Your existing purchase is not affected by price changes for new customers unless otherwise stated.</p>
+            </div>
+          </section>
+          <section id="community-standards">
+            <h2><span>04</span>Community Standards</h2>
+            <div>
+              <p>InnerCircle+ is a respectful, members-only community. You agree not to:</p>
+              <ul><li>Harass, threaten, stalk, or abuse any person</li><li>Post hate speech, discriminatory content, or incitement to violence</li><li>Impersonate another person or misrepresent your identity, age, or intentions</li><li>Share non-consensual, explicit, or illegal content</li><li>Solicit money, run scams, or promote fraud (including crypto or wire-transfer schemes)</li><li>Spam, scrape, or use automated tools on the Service</li><li>Attempt to bypass verification, moderation, or security controls</li></ul>
+              <p>We may filter messages for common scam and abuse patterns. Violations may result in warnings, suspension, or permanent removal without refund.</p>
+            </div>
+          </section>
+          <section id="user-content-and-license">
+            <h2><span>05</span>User Content and License</h2>
+            <div>
+              <p>You retain ownership of content you submit (photos, messages, voice notes, and profile text). You grant us a limited license to host, display, transmit, and process that content solely to operate the Service, enforce policies, and keep members safe.</p>
+              <p>You are solely responsible for content you share and for your interactions with other members. We do not guarantee the conduct, identity, or intentions of any user.</p>
+            </div>
+          </section>
+          <section id="safety-tools">
+            <h2><span>06</span>Safety Tools</h2>
+            <div>
+              <p>The Service includes tools to block users and report harassment or fraud. Blocking removes a user from your feed and interactions immediately and notifies our team for review.</p>
+              <p>Reports are reviewed by our safety process. We aim to act on credible reports of objectionable content within 24 hours, which may include content removal, account suspension, or permanent ban.</p>
+              <p>In an emergency, contact local authorities first. InnerCircle+ support cannot replace emergency services.</p>
+            </div>
+          </section>
+          <section id="verification">
+            <h2><span>07</span>Verification</h2>
+            <div>
+              <p>We may require live selfie verification to confirm that profile photos represent you. Failure to complete verification, or evidence of misleading photos, may limit or revoke access.</p>
+              <p>Verification results are used for trust and safety—not shared publicly with other members.</p>
+            </div>
+          </section>
+          <section id="messaging-voice-notes-photos-and-videos">
+            <h2><span>08</span>Messaging, Voice Notes, Photos, and Videos</h2>
+            <div>
+              <p>Chat, voice notes, and photo and video sharing are provided for private communication between matched members. You agree to use these features lawfully and respectfully.</p>
+              <p>Do not send nudity, sexual content, or any image or video of another person without their consent. Shared photos and videos are blurred until the recipient chooses to view them, and members can report any message. Violations may lead to removal from the Service.</p>
+              <p>Voice notes require microphone permission.</p>
+            </div>
+          </section>
+          <section id="account-suspension-and-termination">
+            <h2><span>09</span>Account Suspension and Termination</h2>
+            <div>
+              <p>You may delete your account at any time from Profile settings. We may suspend or terminate access immediately if we believe you violated these Terms, created risk for other members, or if required by law.</p>
+              <p>Upon termination, your right to use the Service ends. Provisions that by nature should survive (including disclaimers and limitations of liability) will survive.</p>
+            </div>
+          </section>
+          <section id="disclaimers">
+            <h2><span>10</span>Disclaimers</h2>
+            <div>
+              <p class="caps">THE SERVICE IS PROVIDED “AS IS” AND “AS AVAILABLE.” WE DISCLAIM ALL WARRANTIES TO THE MAXIMUM EXTENT PERMITTED BY LAW, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
+              <p class="caps">WE DO NOT WARRANT THAT MATCHES WILL RESULT IN RELATIONSHIPS, THAT USERS ARE WHO THEY CLAIM TO BE BEYOND OUR VERIFICATION STEPS, OR THAT THE SERVICE WILL BE UNINTERRUPTED OR ERROR-FREE.</p>
+            </div>
+          </section>
+          <section id="limitation-of-liability">
+            <h2><span>11</span>Limitation of Liability</h2>
+            <div>
+              <p class="caps">TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE AND OUR AFFILIATES WILL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, DATA, OR GOODWILL, ARISING FROM YOUR USE OF THE SERVICE OR INTERACTIONS WITH OTHER MEMBERS.</p>
+              <p class="caps">OUR TOTAL LIABILITY FOR ANY CLAIM RELATING TO THE SERVICE WILL NOT EXCEED THE AMOUNT YOU PAID FOR PREMIUM ACCESS IN THE TWELVE MONTHS BEFORE THE CLAIM, OR ONE HUNDRED U.S. DOLLARS, WHICHEVER IS GREATER, EXCEPT WHERE LIABILITY CANNOT BE LIMITED BY LAW.</p>
+            </div>
+          </section>
+          <section id="dispute-resolution">
+            <h2><span>12</span>Dispute Resolution</h2>
+            <div>
+              <p>Before filing a formal dispute, contact <a href="mailto:innercirclesupport@hokfam.com">innercirclesupport@hokfam.com</a> so we can try to resolve the issue informally.</p>
+              <p>These Terms are governed by applicable law in your jurisdiction of residence where consumer protections require, otherwise as permitted by law. Nothing in these Terms limits rights you cannot waive under mandatory local law.</p>
+            </div>
+          </section>
+          <section id="changes-to-terms">
+            <h2><span>13</span>Changes to Terms</h2>
+            <div>
+              <p>We may update these Terms from time to time. Material changes will be communicated in the app. Continued use after the effective date of updated Terms constitutes acceptance.</p>
+            </div>
+          </section>
+          <section id="contact">
+            <h2><span>14</span>Contact</h2>
+            <div>
+              <p><strong>Questions about these Terms:</strong> <a href="mailto:innercirclesupport@hokfam.com">innercirclesupport@hokfam.com</a></p>
+              <p><strong>Effective Date:</strong> October 24, 2026</p>
+            </div>
+          </section>
+      </article>
+    </div>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="container">
-      <div>InnerCircle+ &copy; 2026. All rights reserved.</div>
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">InnerCircle<em>+</em></a>
+          <p class="footer-tag">A private dating network for verified members who value quality over quantity.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html#how">How it works</a></li>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#safety">Safety</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="mailto:innercirclesupport@hokfam.com">innercirclesupport@hokfam.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <span>&copy; <span data-year>2026</span> InnerCircle+. All rights reserved.</span>
+        <span>Made for people with real intentions.</span>
+      </div>
     </div>
   </footer>
 </body>

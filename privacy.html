@@ -2,82 +2,223 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Privacy Policy | InnerCircle+</title>
-  <meta name="description" content="Privacy Policy for InnerCircle+.">
+  <meta name="description" content="How InnerCircle+ collects, uses, protects, and deletes your information, including face data.">
+  <meta name="theme-color" content="#050505">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
 </head>
 <body>
-  <nav class="nav">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="read-progress" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-nav" data-nav>
     <div class="container nav-inner">
-      <div class="brand">InnerCircle<span>+</span></div>
-      <div class="links">
-        <a href="index.html">Home</a>
+      <a class="brand" href="index.html" aria-label="InnerCircle+ home">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <defs>
+            <linearGradient id="brandGold" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#F3E3B6"/><stop offset="0.55" stop-color="#C9A460"/><stop offset="1" stop-color="#8A6A35"/>
+            </linearGradient>
+          </defs>
+          <g fill="none" stroke="url(#brandGold)" stroke-width="2">
+            <circle cx="32" cy="32" r="22"/>
+            <g class="ring-a"><ellipse cx="32" cy="32" rx="23" ry="17" transform="rotate(28 32 32)"/></g>
+            <g class="ring-b"><ellipse cx="32" cy="32" rx="23" ry="17" transform="rotate(-28 32 32)"/></g>
+          </g>
+        </svg>
+        <span>InnerCircle<em>+</em></span>
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="Main">
+        <a href="index.html#how">How it works</a>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#safety">Safety</a>
         <a href="support.html">Support</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-      </div>
+        <a class="btn btn-gold btn-sm" href="https://apps.apple.com" target="_blank" rel="noopener">Get the app</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
     </div>
-  </nav>
+  </header>
 
-  <main class="container legal">
-    <section class="hero">
-      <div class="eyebrow">Legal</div>
-      <h1>Privacy Policy</h1>
-      <p class="lead">Last updated: February 14, 2026</p>
+  <main id="main">
+    <section class="page-hero">
+      <svg class="orbits" viewBox="0 0 1200 1200" aria-hidden="true">
+        <defs>
+          <linearGradient id="orbitStroke" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#E8D29E" stop-opacity="0.65"/>
+            <stop offset="0.5" stop-color="#C9A460" stop-opacity="0.18"/>
+            <stop offset="1" stop-color="#E8D29E" stop-opacity="0.5"/>
+          </linearGradient>
+        </defs>
+        <g class="o1"><circle cx="600" cy="600" r="420"/></g>
+        <g class="o2"><ellipse cx="600" cy="600" rx="540" ry="360" transform="rotate(28 600 600)"/></g>
+        <g class="o3"><ellipse cx="600" cy="600" rx="540" ry="360" transform="rotate(-28 600 600)"/></g>
+      </svg>
+      <div class="container">
+        <p class="eyebrow" data-reveal>Legal</p>
+        <h1 class="display">
+          <span class="line"><span>Privacy</span></span>
+          <span class="line"><em class="shimmer">Policy.</em></span>
+        </h1>
+        <p class="lead" data-reveal style="--i: 3">What we collect, why we collect it, how we protect it, and the choices you have, written plainly.</p>
+        <span class="meta-pill" data-reveal style="--i: 4">Effective October 24, 2026</span>
+      </div>
     </section>
 
-    <section class="section">
-      <h2>1. Information We Collect</h2>
-      <ul>
-        <li>Account data such as name, age, profile details, and photos.</li>
-        <li>Usage data such as feature interactions and diagnostics.</li>
-        <li>Device and notification identifiers for app functionality.</li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2>2. How We Use Information</h2>
-      <ul>
-        <li>To provide matching, messaging, and profile features.</li>
-        <li>To protect member safety and prevent abuse.</li>
-        <li>To improve performance, reliability, and support quality.</li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2>3. Sharing</h2>
-      <p>We do not sell your personal information. We share data only with service providers required to operate the app (for example, hosting, authentication, and messaging infrastructure) and where legally required.</p>
-    </section>
-
-    <section class="section">
-      <h2>4. Data Retention</h2>
-      <p>We retain data while your account is active and for limited periods after closure when needed for legal compliance, fraud prevention, or dispute handling.</p>
-    </section>
-
-    <section class="section">
-      <h2>5. Your Choices</h2>
-      <ul>
-        <li>Update profile details directly in the app.</li>
-        <li>Request account deletion through in-app profile settings.</li>
-        <li>Manage notification permissions in iOS settings.</li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2>6. Security</h2>
-      <p>We use technical and organizational measures designed to protect user data, including access controls and service-level safeguards.</p>
-    </section>
-
-    <section class="section">
-      <h2>7. Contact</h2>
-      <p>Privacy requests: <a href="mailto:innercircle@hokfam.com">innercircle@hokfam.com</a></p>
-    </section>
+    <div class="container legal-layout">
+      <aside class="toc" aria-label="On this page">
+        <p>On this page</p>
+        <ol>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#information-we-collect">Information We Collect</a></li>
+            <li><a href="#how-we-use-your-information">How We Use Your Information</a></li>
+            <li><a href="#how-we-share-information">How We Share Information</a></li>
+            <li><a href="#data-security">Data Security</a></li>
+            <li><a href="#face-data">Face Data</a></li>
+            <li><a href="#data-retention">Data Retention</a></li>
+            <li><a href="#your-rights-and-choices">Your Rights and Choices</a></li>
+            <li><a href="#children">Children</a></li>
+            <li><a href="#international-users">International Users</a></li>
+            <li><a href="#changes-to-this-policy">Changes to This Policy</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+        </ol>
+      </aside>
+      <article class="legal-body">
+          <section id="introduction">
+            <h2><span>01</span>Introduction</h2>
+            <div>
+              <p>InnerCircle+ (“we,” “us,” or “our”) operates a private, curated dating and social connection service. This Privacy Policy explains what information we collect, how we use it, how we protect it, and the choices available to you when you use the InnerCircle+ mobile application and related services (collectively, the “Service”).</p>
+              <p>By creating an account or using the Service, you acknowledge that you have read and understood this Privacy Policy.</p>
+            </div>
+          </section>
+          <section id="information-we-collect">
+            <h2><span>02</span>Information We Collect</h2>
+            <div>
+              <p>We collect information you provide directly, information generated through your use of the Service, and limited technical data necessary to operate the app securely.</p>
+              <p><strong>Account and profile:</strong> name, age, birthday, gender, preferences, city, bio, job title, lifestyle tags, intent answers, profile photos, and email from Sign in with Apple when you choose that sign-in method.</p>
+              <p><strong>Identity verification:</strong> live selfie images processed on your device to confirm that your profile photos match your real appearance. See the “Face Data” section below for how this data is handled.</p>
+              <p><strong>Location:</strong> when you grant permission, we use your location to prioritize nearby matches. We store it rounded to roughly 1 kilometer, and other members see only an approximate distance, never your exact position.</p>
+              <p><strong>Messaging and activity:</strong> messages you send (including text, voice notes, photos, and videos), chat metadata, delivery status, typing indicators, match and like activity, blocks, and reports.</p>
+              <p><strong>Device and service data:</strong> device identifiers needed for push notifications, authentication tokens, app version, and diagnostic logs used to maintain reliability and security.</p>
+            </div>
+          </section>
+          <section id="how-we-use-your-information">
+            <h2><span>03</span>How We Use Your Information</h2>
+            <div>
+              <p>We use your information to:</p>
+              <ul><li>Create and maintain your account and profile</li><li>Provide curated daily introductions and mutual-match chat features</li><li>Operate identity verification and reduce impersonation</li><li>Prioritize geographically relevant matches when location is enabled</li><li>Deliver push notifications for messages and important account events</li><li>Enforce community standards, including content filtering, blocking, and reporting</li><li>Respond to support requests and legal obligations</li><li>Improve safety, performance, and product quality</li></ul>
+              <p>We do not sell your personal information to third parties for advertising or data brokerage.</p>
+            </div>
+          </section>
+          <section id="how-we-share-information">
+            <h2><span>04</span>How We Share Information</h2>
+            <div>
+              <p>We share information only as needed to operate the Service:</p>
+              <p><strong>With other members:</strong> your profile information and photos are visible to other verified members according to app design. Messages are shared only with conversation participants.</p>
+              <p><strong>With service providers:</strong> we use trusted infrastructure partners (for example, cloud hosting, file storage, authentication, and push notification providers) that process data on our behalf under contractual confidentiality and security obligations.</p>
+              <p><strong>For legal and safety reasons:</strong> we may disclose information if required by law, to protect users and the public, to investigate abuse, or to enforce our Terms of Service.</p>
+              <p>We do not share verification selfies with other members.</p>
+            </div>
+          </section>
+          <section id="data-security">
+            <h2><span>05</span>Data Security</h2>
+            <div>
+              <p>We apply technical and organizational safeguards designed to protect your data, including encryption in transit, access controls, and abuse-prevention systems.</p>
+              <p>Messages, voice notes, photos, and videos are stored on our servers so they can be delivered to your match. Access is restricted to the two members of the conversation in the app. Messages are not end-to-end encrypted.</p>
+              <p>No method of transmission or storage is completely secure. You are responsible for maintaining the security of your device and Apple ID credentials.</p>
+            </div>
+          </section>
+          <section id="face-data">
+            <h2><span>06</span>Face Data</h2>
+            <div>
+              <p>InnerCircle+ uses Apple’s on-device Vision framework during identity verification to compare a live selfie with your profile photos. This process involves temporary analysis of facial geometry and image features solely to determine whether the photos appear to depict the same person.</p>
+              <p>Face data is not retained. We do not store verification selfies, facial geometry, biometric templates, or raw face-analysis data on our servers or on your device after verification completes. The comparison runs in memory on your device and the selfie image is discarded immediately when the check finishes—typically within seconds.</p>
+              <p><strong>Why face data is processed:</strong> we process face data only for a one-time identity verification check to reduce impersonation and maintain trust in our curated community. This is a trust-and-safety measure, not advertising or profiling.</p>
+              <p><strong>How long face data is stored:</strong> face data is not stored beyond the momentary on-device verification step described above. We do not retain face data indefinitely or for any ongoing purpose. After verification, we may store only a non-biometric result such as a verified/unverified status flag tied to your account.</p>
+              <p>We do not share verification selfies or face data with other members or third parties for marketing.</p>
+            </div>
+          </section>
+          <section id="data-retention">
+            <h2><span>07</span>Data Retention</h2>
+            <div>
+              <p>We retain your information while your account is active and for a limited period afterward as needed for legal compliance, dispute resolution, fraud prevention, and safety investigations.</p>
+              <p>When you delete your account, we permanently delete your profile, photos, likes, matches, messages, and shared media. Safety reports you made or received may be kept for a limited period to investigate abuse, as permitted by law.</p>
+            </div>
+          </section>
+          <section id="your-rights-and-choices">
+            <h2><span>08</span>Your Rights and Choices</h2>
+            <div>
+              <p>Depending on your location, you may have rights to access, correct, delete, or export your personal information, and to object to or restrict certain processing.</p>
+              <p><strong>In the app you can:</strong> update profile details, manage photos, hide your profile from new introductions, turn off read receipts and message previews, block users, report concerns, and delete your account from Profile settings.</p>
+              <p>For privacy requests, contact us at <a href="mailto:innercirclesupport@hokfam.com">innercirclesupport@hokfam.com</a>. We aim to respond within a reasonable timeframe.</p>
+            </div>
+          </section>
+          <section id="children">
+            <h2><span>09</span>Children</h2>
+            <div>
+              <p>InnerCircle+ is intended only for adults aged 20 and older. We do not knowingly collect information from anyone under 20. If we learn that a minor has provided information, we will delete the account and associated data.</p>
+            </div>
+          </section>
+          <section id="international-users">
+            <h2><span>10</span>International Users</h2>
+            <div>
+              <p>If you use the Service from outside your home country, your information may be processed in countries where our service providers operate. We take steps designed to ensure appropriate safeguards consistent with applicable law.</p>
+            </div>
+          </section>
+          <section id="changes-to-this-policy">
+            <h2><span>11</span>Changes to This Policy</h2>
+            <div>
+              <p>We may update this Privacy Policy from time to time. We will post the revised version in the app and update the effective date. Continued use of the Service after changes become effective constitutes acceptance of the updated policy.</p>
+            </div>
+          </section>
+          <section id="contact-us">
+            <h2><span>12</span>Contact Us</h2>
+            <div>
+              <p>For privacy questions or requests, email <a href="mailto:innercirclesupport@hokfam.com">innercirclesupport@hokfam.com</a>.</p>
+              <p><strong>Effective Date:</strong> October 24, 2026</p>
+            </div>
+          </section>
+      </article>
+    </div>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="container">
-      <div>InnerCircle+ &copy; 2026. All rights reserved.</div>
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">InnerCircle<em>+</em></a>
+          <p class="footer-tag">A private dating network for verified members who value quality over quantity.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html#how">How it works</a></li>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#safety">Safety</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="mailto:innercirclesupport@hokfam.com">innercirclesupport@hokfam.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <span>&copy; <span data-year>2026</span> InnerCircle+. All rights reserved.</span>
+        <span>Made for people with real intentions.</span>
+      </div>
     </div>
   </footer>
 </body>

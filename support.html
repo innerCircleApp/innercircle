@@ -2,48 +2,171 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Support | InnerCircle+</title>
-  <meta name="description" content="Support resources for InnerCircle+.">
+  <meta name="description" content="Get help with your InnerCircle+ account, matches, messaging, privacy, and safety.">
+  <meta name="theme-color" content="#050505">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
 </head>
 <body>
-  <nav class="nav">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-nav" data-nav>
     <div class="container nav-inner">
-      <div class="brand">InnerCircle<span>+</span></div>
-      <div class="links">
-        <a href="index.html">Home</a>
-        <a href="support.html">Support</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-      </div>
+      <a class="brand" href="index.html" aria-label="InnerCircle+ home">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <defs>
+            <linearGradient id="brandGold" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#F3E3B6"/><stop offset="0.55" stop-color="#C9A460"/><stop offset="1" stop-color="#8A6A35"/>
+            </linearGradient>
+          </defs>
+          <g fill="none" stroke="url(#brandGold)" stroke-width="2">
+            <circle cx="32" cy="32" r="22"/>
+            <g class="ring-a"><ellipse cx="32" cy="32" rx="23" ry="17" transform="rotate(28 32 32)"/></g>
+            <g class="ring-b"><ellipse cx="32" cy="32" rx="23" ry="17" transform="rotate(-28 32 32)"/></g>
+          </g>
+        </svg>
+        <span>InnerCircle<em>+</em></span>
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="Main">
+        <a href="index.html#how">How it works</a>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#safety">Safety</a>
+        <a href="support.html" aria-current="page">Support</a>
+        <a class="btn btn-gold btn-sm" href="https://apps.apple.com" target="_blank" rel="noopener">Get the app</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
     </div>
-  </nav>
+  </header>
 
-  <main class="container legal">
-    <section class="hero">
-      <div class="eyebrow">Help Center</div>
-      <h1>Support</h1>
-      <p class="lead">Need help with your account, matching, or messaging? We are here for you.</p>
+  <main id="main">
+    <section class="page-hero">
+      <svg class="orbits" viewBox="0 0 1200 1200" aria-hidden="true">
+        <defs>
+          <linearGradient id="orbitStroke" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#E8D29E" stop-opacity="0.65"/>
+            <stop offset="0.5" stop-color="#C9A460" stop-opacity="0.18"/>
+            <stop offset="1" stop-color="#E8D29E" stop-opacity="0.5"/>
+          </linearGradient>
+        </defs>
+        <g class="o1"><circle cx="600" cy="600" r="420"/></g>
+        <g class="o2"><ellipse cx="600" cy="600" rx="540" ry="360" transform="rotate(28 600 600)"/></g>
+        <g class="o3"><ellipse cx="600" cy="600" rx="540" ry="360" transform="rotate(-28 600 600)"/></g>
+      </svg>
+      <div class="container">
+        <p class="eyebrow" data-reveal>Help center</p>
+        <h1 class="display">
+          <span class="line"><span>How can we</span></span>
+          <span class="line"><em class="shimmer">help?</em></span>
+        </h1>
+        <p class="lead" data-reveal style="--i: 3">Questions about your account, matches, messages, or privacy. A real person reads every email.</p>
+      </div>
     </section>
 
-    <section class="section">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:innercirclesupport@hokfam.com">innercirclesupport@hokfam.com</a></p>
-      <p>Response time: usually within 24-48 hours.</p>
+    <section class="container">
+      <div class="support-grid">
+        <article class="card contact-card" data-tilt data-reveal style="--i: 0">
+          <div>
+            <p class="eyebrow">Email support</p>
+            <div class="contact-email">
+              <a href="mailto:innercirclesupport@hokfam.com">innercirclesupport@hokfam.com</a>
+            </div>
+          </div>
+          <div class="cta-row" style="margin-top: 0">
+            <a class="btn btn-gold" href="mailto:innercirclesupport@hokfam.com?subject=InnerCircle%2B%20Support">Write to us</a>
+            <button class="btn copy-btn" type="button" data-copy="innercirclesupport@hokfam.com">Copy address</button>
+          </div>
+        </article>
+        <article class="card" data-tilt data-reveal style="--i: 1">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></div>
+          <h3>Response time</h3>
+          <p>We usually reply within 24 to 48 hours. Safety reports are reviewed within 24 hours.</p>
+        </article>
+      </div>
     </section>
 
-    <section class="section">
-      <h2>Common Questions</h2>
-      <p><strong>How do matches work?</strong><br>When two members both tap "Interested," a mutual match is created and chat unlocks.</p>
-      <p><strong>How can I report or block someone?</strong><br>Use in-app profile options to report behavior or block a member immediately.</p>
-      <p><strong>How do I delete my account?</strong><br>Go to your profile settings in the app and choose Delete Account.</p>
+    <section class="section" style="padding-top: 0" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow" data-reveal>Quick answers</p>
+          <h2 class="section-title" id="faq-title" data-reveal style="--i: 1">Common <em>questions.</em></h2>
+        </div>
+        <div class="faq-list" data-reveal style="--i: 2">
+          <details>
+            <summary>How do matches work?<span class="plus" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Tap the heart on someone in Today’s Introductions. They’re notified, and if they love you back, it’s a match and a private chat opens for both of you.</p></div>
+          </details>
+          <details>
+            <summary>Where can I see who loved me?<span class="plus" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Open Chats and tap the bell in the top corner. Tap anyone in the list to view their profile and love them back.</p></div>
+          </details>
+          <details>
+            <summary>Why do I only see a few introductions a day?<span class="plus" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>InnerCircle+ is curated on purpose. Each day you get a small set of verified members chosen around your preferences and distance. When you’ve seen them all, new introductions arrive the next day.</p></div>
+          </details>
+          <details>
+            <summary>How does verification work?<span class="plus" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>During setup you take a live selfie. Your iPhone compares it with your profile photos and then discards it. We never store face data, only whether verification passed.</p></div>
+          </details>
+          <details>
+            <summary>How do I report or block someone?<span class="plus" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>In a chat, long press any message to report it, or tap the menu in the top corner to block the member or report harassment or fraud. Blocking takes effect immediately.</p></div>
+          </details>
+          <details>
+            <summary>Can I control what others see?<span class="plus" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Yes. In Settings, under Privacy, you can hide your profile from new introductions, turn read receipts off, and hide message text on your lock screen.</p></div>
+          </details>
+          <details>
+            <summary>How do I delete my account?<span class="plus" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Go to Profile, then Delete Account. Your profile, photos, likes, matches, messages, and shared media are permanently deleted, along with your sign-in account.</p></div>
+          </details>
+        </div>
+
+        <div class="emergency callout" data-reveal>
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#E8D29E" stroke-width="1.6" aria-hidden="true"><path d="M12 3 2.5 20h19z"/><path d="M12 10v4.5M12 17.5v.5"/></svg>
+          <p style="margin: 0; color: var(--muted)">If you are ever in danger, contact your local emergency services first. Then let us know so we can act on the account involved.</p>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="container">
-      <div>InnerCircle+ &copy; 2026. All rights reserved.</div>
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">InnerCircle<em>+</em></a>
+          <p class="footer-tag">A private dating network for verified members who value quality over quantity.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html#how">How it works</a></li>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#safety">Safety</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="mailto:innercirclesupport@hokfam.com">innercirclesupport@hokfam.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <span>&copy; <span data-year>2026</span> InnerCircle+. All rights reserved.</span>
+        <span>Made for people with real intentions.</span>
+      </div>
     </div>
   </footer>
 </body>
